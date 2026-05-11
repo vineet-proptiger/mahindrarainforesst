@@ -117,9 +117,9 @@ export default function Hero({ setIsOpen }) {
                 fontFamily: F_SANS, fontSize: 'clamp(8px, 2vw, 10px)', fontWeight: 700,
                 letterSpacing: '0.15em', textTransform: 'uppercase',
                 color: '#ffffff',
-                border: '1px solid rgba(255,255,255,0.4)',
+                border: '1px solid var(--color-gold)',
                 padding: '4px 10px', borderRadius: '2px',
-                background: 'rgba(14,11,8,0.5)', backdropFilter: 'blur(8px)',
+                background: 'var(--color-gold)',
                 whiteSpace: 'nowrap'
               }}
                 className="px-2 py-1 sm:px-4 sm:py-1.5"

@@ -11,9 +11,9 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SERIF = 'var(--font-serif), Cormorant Garamond, serif'
 
-const PREVIEW_TEXT = `Mahindra Rainforest is a premium residential project located at Kanjurmarg, Mumbai, offering luxurious 2 BHK and 3 BHK apartments crafted for modern families. Developed by the trusted Mahindra Lifespaces, this high-rise community spans 37 acres and rises to G+9P+45 floors, planned with a focus on comfort, efficient layouts, open green spaces, and quality construction standards.`
+const PREVIEW_TEXT = `Mahindra Rainforest is a newly launched residential township in Kanjurmarg, Mumbai. Currently, in Phase-1, this cluster of 5 iconic towers features spacious 2 BHK and 3 BHK apartments with a panoramic view of the city skyline. The towers have been planned to allow ample natural light and airflow into the apartments. Each apartment will be meticulously designed to maximise space and will be furnished with branded interiors. Moreover, this cluster of high-rises offers world-class amenities, including a gymnasium, swimming pool, jogging track, landscaped garden, kids' play area, indoor games area, multipurpose court, banquet hall, senior citizen area, and amphitheatre.`
 
-const MORE_TEXT = ` Set in one of Mumbai's most sought-after locations, Mahindra Rainforest provides a balanced lifestyle with strong connectivity, everyday convenience, and a secure living environment. The project is currently open for Expression of Interest (EOI) — with EOI starting at just ₹2.70 Lakhs for 2 BHK and ₹3.60 Lakhs for 3 BHK — making this the right time to invest in a home that promises both quality living and strong future value.`
+const MORE_TEXT = `Situated in a rapidly developing suburb, Mahindra Rainforest is merely minutes away from prominent social landmarks such as GS Shetty International School, Nanji Shamji Shah English Medium High School, St Xavier's High School & Junior College, IES Secondary School, Vk Krishna Menon College, Astha Hospital, Ankur Hospital, iThink Techno Campus, Ackruti Corporate Park, Neptune Magnet Mall, and D-Mart.`
 
 const OPEN_VIEWS = [
   { dir: '2m', label: 'Kanjurmarg Stn', sub: '2 Mins Away' },
@@ -253,14 +253,20 @@ const Overview = () => {
             <div style={{
               background: '#fff', borderRadius: '16px', padding: '24px 22px',
               boxShadow: '0 4px 20px rgba(0,0,0,0.06)', border: '1px solid #f0f0f0',
-              display: 'flex', flexDirection: 'column', gap: '18px', width: '100%',
+              display: 'flex', flexDirection: 'column', gap: '10px', width: '100%',
             }}>
               {/* Description */}
               <p style={{
                 color: '#374151', fontFamily: F_SANS, lineHeight: 1.85,
-                fontSize: '14px', margin: 0, textAlign: 'justify',
+                fontSize: '13px', margin: 0, textAlign: 'justify',
               }}>
-                {PREVIEW_TEXT}{MORE_TEXT}
+                {PREVIEW_TEXT}
+              </p>
+              <p style={{
+                color: '#374151', fontFamily: F_SANS, lineHeight: 1.85,
+                fontSize: '13px', margin: 0, textAlign: 'justify',
+              }}>
+                {MORE_TEXT}
               </p>
 
             </div>
