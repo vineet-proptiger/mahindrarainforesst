@@ -62,7 +62,7 @@ export default function Hero({ setIsOpen }) {
         {/* ══════════════════════════════
             IMAGE STAGE — top 65%
         ══════════════════════════════ */}
-        <div style={{ flex: 1, minHeight: '240px', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ flex: 1, minHeight: '240px', maxHeight: 'min(78vh, 860px)', position: 'relative', overflow: 'hidden' }}>
 
           {/* Carousel track */}
           <div style={{
@@ -85,6 +85,7 @@ export default function Hero({ setIsOpen }) {
                     alt={`Mahindra Rainforest ${idx + 1}`}
                     fill
                     className="object-cover"
+                    style={{ objectPosition: 'center 20%' }}
                     priority={idx === 0}
                     sizes="100vw"
                   />
