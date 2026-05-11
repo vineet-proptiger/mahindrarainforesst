@@ -4,12 +4,9 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const locationItems = [
-  'Located just 2 minutes from Kanjurmarg Railway Station (Central Line)',
-  '10 minutes from LBS Marg & Eastern Express Highway',
-  '15 minutes from Bandra-Kurla Complex (BKC)',
-  '20 minutes from Powai IT Hub',
-  '25 minutes drive to Chhatrapati Shivaji Maharaj International Airport',
-  'Within 5 km of reputed schools, hospitals & shopping malls',
+  { label: 'Kanjurmarg Railway Station', time: '5 mins' },
+  { label: 'Eastern Express Highway', time: '10 mins' },
+  { label: 'Chhatrapati Shivaji Maharaj International Airport', time: '30 mins' },
 ]
 
 const Location = () => {
@@ -45,14 +42,17 @@ const Location = () => {
 
         <div className="flex flex-col lg:flex-row gap-6 items-stretch">
 
-          {/* LEFT — Simple List */}
-          <div className="w-full lg:w-[45%]" data-aos="fade-right">
+          {/* LEFT — Connectivity List */}
+          <div className="w-full lg:w-[50%]" data-aos="fade-right">
             <div style={{
               background: '#fff',
               borderRadius: '16px',
               boxShadow: '0 4px 24px rgba(0,0,0,0.06)',
               border: '1px solid #f0f0f0',
               overflow: 'hidden',
+              height: '100%',
+              display: 'flex',
+              flexDirection: 'column'
             }}>
               {/* List Header */}
               <div style={{
@@ -67,31 +67,38 @@ const Location = () => {
                   fontFamily: F_JOST, fontWeight: '800', fontSize: '13px',
                   color: '#fff', margin: 0, letterSpacing: '0.06em', textTransform: 'uppercase'
                 }}>
-                  Prime Location & Connectivity
+                  Connectivity & Landmarks
                 </p>
               </div>
 
               {/* Items */}
-              <div style={{ padding: '12px 16px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {locationItems.map((item, i) => (
-                  <div key={i} style={{
-                    borderRadius: '6px',
-                    padding: '13px 18px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '10px',
-                    borderBottom: '1px solid #f0f0f0',
-                  }}>
-                    <span style={{
-                      width: '6px', height: '6px', borderRadius: '50%',
-                      background: 'var(--color-gold)', flexShrink: 0,
-                    }} />
-                    <span style={{
-                      fontSize: '13.5px', color: '#374151', fontWeight: '600',
-                      fontFamily: F_SANS, letterSpacing: '0.01em', lineHeight: 1.4,
-                    }}>{item}</span>
-                  </div>
-                ))}
+              <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                <div style={{ borderTop: '1px solid #e5e7eb' }}>
+                  {locationItems.map((item, i) => (
+                    <div key={i} style={{
+                      padding: '16px 0',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      gap: '12px',
+                      borderBottom: '1px solid #e5e7eb',
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#e11d48">
+                          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span style={{
+                          fontSize: '14px', color: '#1f2937', fontWeight: '500',
+                          fontFamily: F_SANS,
+                        }}>{item.label}</span>
+                      </div>
+                      <span style={{
+                        fontSize: '14px', color: '#000', fontWeight: '700',
+                        fontFamily: F_SANS, whiteSpace: 'nowrap'
+                      }}>{item.time}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -110,7 +117,7 @@ const Location = () => {
                 background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', zIndex: 10,
               }} />
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3234959375!2d72.9127!3d19.1397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7ee1b77ca59%3A0xf12b6c0ce3d2b81a!2sKanjurmarg%20West%2C%20Mumbai%2C%20Maharashtra%20400078!5e0!3m2!1sen!2sin!4v1777456444738!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.6647402296926!2d72.929876975207!3d19.1416884820765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9048fe840b1%3A0xc9c7849448e82824!2sMahindra%20Rainforest!5e1!3m2!1sen!2sin!4v1778497665687!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '420px', display: 'block' }}

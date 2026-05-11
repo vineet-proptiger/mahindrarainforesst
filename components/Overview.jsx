@@ -11,9 +11,9 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SERIF = 'var(--font-serif), Cormorant Garamond, serif'
 
-const PREVIEW_TEXT = `Mahindra Rainforest is a newly launched residential township in Kanjurmarg, Mumbai. Currently, in Phase-1, this cluster of 5 iconic towers features spacious 2 BHK and 3 BHK apartments with a panoramic view of the city skyline. The towers have been planned to allow ample natural light and airflow into the apartments. Each apartment will be meticulously designed to maximise space and will be furnished with branded interiors. Moreover, this cluster of high-rises offers world-class amenities, including a gymnasium, swimming pool, jogging track, landscaped garden, kids' play area, indoor games area, multipurpose court, banquet hall, senior citizen area, and amphitheatre.`
+const PREVIEW_TEXT = `Mahindra Rainforest is a newly launched residential township in Kanjurmarg, Mumbai. Phase-1 features 5 iconic towers with spacious 2 BHK & 3 BHK apartments offering panoramic city views. Apartments are meticulously designed with branded interiors for maximum space and light. The project offers world-class amenities including a gymnasium, swimming pool, jogging track, kids' play area, landscaped gardens, indoor games, and an amphitheatre.`
 
-const MORE_TEXT = `Situated in a rapidly developing suburb, Mahindra Rainforest is merely minutes away from prominent social landmarks such as GS Shetty International School, Nanji Shamji Shah English Medium High School, St Xavier's High School & Junior College, IES Secondary School, Vk Krishna Menon College, Astha Hospital, Ankur Hospital, iThink Techno Campus, Ackruti Corporate Park, Neptune Magnet Mall, and D-Mart.`
+const MORE_TEXT = ` Situated in a rapidly developing suburb, it is merely minutes away from landmarks like GS Shetty School, St Xavier’s High School, IES Secondary School, Astha Hospital, and D-Mart. With seamless connectivity to LBS Marg, JVLR, Eastern Express Highway, and the International Airport, it ensures a rich and serene living experience at Mahindra Rainforest.`
 
 const OPEN_VIEWS = [
   { dir: '2m', label: 'Kanjurmarg Stn', sub: '2 Mins Away' },
@@ -90,7 +90,7 @@ const EarlyForm = () => {
   )
 
   return (
-    <form onSubmit={submit} style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%' }}>
+    <form onSubmit={submit} style={{ display: 'flex', flexDirection: 'column', gap: '10px', height: '100%' }}>
 
       {/* Name */}
       <div style={{ position: 'relative' }}>
@@ -223,7 +223,7 @@ const Overview = () => {
               position: 'relative', borderRadius: '16px', overflow: 'hidden',
               boxShadow: '0 16px 48px rgba(0,0,0,0.14)',
               border: '3px solid #fff', width: '100%',
-              height: '100%', minHeight: '520px',
+              height: '100%', minHeight: '480px',
             }}>
               <Image src={overviewImage} alt="Mahindra Rainforest" fill className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 33vw" priority />
@@ -251,7 +251,7 @@ const Overview = () => {
           {/* MIDDLE: Text */}
           <div data-aos="fade-up" style={{ display: 'flex' }}>
             <div style={{
-              background: '#fff', borderRadius: '16px', padding: '24px 22px',
+              background: '#fff', borderRadius: '16px', padding: '20px 18px',
               boxShadow: '0 4px 20px rgba(0,0,0,0.06)', border: '1px solid #f0f0f0',
               display: 'flex', flexDirection: 'column', gap: '10px', width: '100%',
             }}>
@@ -260,13 +260,7 @@ const Overview = () => {
                 color: '#374151', fontFamily: F_SANS, lineHeight: 1.85,
                 fontSize: '13px', margin: 0, textAlign: 'justify',
               }}>
-                {PREVIEW_TEXT}
-              </p>
-              <p style={{
-                color: '#374151', fontFamily: F_SANS, lineHeight: 1.85,
-                fontSize: '13px', margin: 0, textAlign: 'justify',
-              }}>
-                {MORE_TEXT}
+                {PREVIEW_TEXT}{MORE_TEXT}
               </p>
 
             </div>
@@ -301,7 +295,7 @@ const Overview = () => {
                   Limited Units Available — Enquire Now!
                 </p>
               </div>
-              <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+              <div style={{ padding: '16px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                 <EarlyForm />
               </div>
             </div>

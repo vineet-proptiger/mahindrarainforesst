@@ -185,14 +185,14 @@ const AboutDeveloper = ({ setIsOpen }) => (
           {/* White Body */}
           <div style={{ padding: '24px 28px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <p style={{ color: '#555', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '14px', margin: '0 0 14px' }}>
-              Mahindra Lifespaces is the real estate and infrastructure development arm of the Mahindra Group — one of India's most trusted conglomerates. With over 30 years of excellence in delivering sustainable and premium residential communities, Mahindra Lifespaces brings Mahindra Rainforest to Kanjurmarg, Mumbai — redefining high-rise luxury living.</p>
+              A part of the prestigious Mahindra Group of Companies, Mahindra Lifespaces is a real estate firm that builds quality residences, industrial complexes, and integrated cities. With a presence in 9 cities, the company has coupled its innovative practices with sustainable technologies to deliver 43 residential projects in India.</p>
 
 
             {/* Stats */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '22px' }}>
               {[
                 { value: '30+', label: 'Years of Excellence' },
-                { value: '25+', label: 'Projects Delivered' },
+                { value: '43+', label: 'Projects Delivered' },
                 { value: '₹2.10 Cr*', label: 'Starting Price' },
               ].map((stat, i) => (
                 <div key={i} style={{
