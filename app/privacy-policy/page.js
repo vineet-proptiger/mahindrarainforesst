@@ -89,7 +89,7 @@ export default function PrivacyPolicy() {
             <p className="mb-6 sm:mb-8 text-sm sm:text-base" style={{ lineHeight: 1.8, color: '#444', fontFamily: 'var(--font-jost), Jost, sans-serif' }}>
               At{' '}
               <a
-                href="https://mahindrarainforest.in/"
+                href="https://mahindrarainforestkanjurmargwest.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: 'var(--color-gold-dark)', fontWeight: '600' }}

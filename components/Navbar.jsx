@@ -21,8 +21,8 @@ const ProjectLogo = () => (
   <img
     src={logoImages.tarc}
     alt="Mahindra Rainforest"
-    className="h-10 md:h-16 w-auto object-contain transition-all"
-    style={{ maxWidth: '250px' }}
+    className="w-auto object-contain transition-all"
+    style={{ height: '70px', maxWidth: '320px' }}
   />
 )
 
