@@ -55,7 +55,8 @@ export default function Hero({ setIsOpen }) {
         display: 'flex',
         flexDirection: 'column',
         overflow: 'visible',
-        background: '#14110D'
+        background: '#14110D',
+        borderBottom: '1px solid rgba(0,0,0,0.08)'
       }}>
 
         {/* ══════════════════════════════
