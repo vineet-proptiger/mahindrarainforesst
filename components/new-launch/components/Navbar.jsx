@@ -59,13 +59,13 @@ const Navbar = ({ setIsOpen }) => {
         {/* CENTER LOGO */}
         <a href="#" style={{ flexShrink: 0, display: 'flex', alignItems: 'center' }}>
           <style>{`
-            .nav-logo { height: 42px; width: auto; display: block; }
+            .nav-logo { height: 50px; width: auto; display: block; }
             @media (max-width: 767px) {
-              .nav-logo { height: 32px; }
+              .nav-logo { height: 40px; }
             }
           `}</style>
           <img
-            src={logoImages.tarc}
+            src="/new-launch/images/logo/logo.svg"
             alt="Mahindra Rainforest"
             className="nav-logo"
           />

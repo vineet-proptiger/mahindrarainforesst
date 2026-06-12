@@ -1,8 +1,8 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { logoImages } from '../../lib/images'
-import AosInit from '../../components/AosInit'
+import { logoImages } from '../../../lib/images'
+import AosInit from '../../../components/new-launch/components/AosInit'
 
 const GOLD = 'var(--color-gold)'
 const GOLD_DARK = 'var(--color-gold-dark)'
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
 
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between h-[80px]">
           <Link href="/" className="flex items-center">
-            <img src={logoImages.tarc} alt="VRX MAGNA" style={{ height: '50px', width: 'auto', display: 'block' }} />
+            <img src="/new-launch/images/logo/logo.svg" alt="Mahindra Rainforest" style={{ height: '50px', width: 'auto', display: 'block' }} />
           </Link>
           <Link
             href="/"
@@ -92,7 +92,7 @@ export default function PrivacyPolicy() {
                 href="/"
                 style={{ color: 'var(--color-gold-dark)', fontWeight: '600' }}
               >
-                mahindrabeaconhillsmahalaxmi.co.in
+                mahindrarainforestkanjurmarg.in
               </Link>{' '}
               (Authorized Marketing Partner), we respect your privacy and are committed to safeguarding your personal data. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website.
             </p>
@@ -303,7 +303,7 @@ export default function PrivacyPolicy() {
       {/* ── Footer (mini) ── */}
       <footer style={{ background: 'var(--color-dark)', color: '#fff', padding: '24px', textAlign: 'center', borderTop: '1px solid #333' }}>
         <p style={{ fontSize: '13px', color: '#888', fontFamily: 'var(--font-sans)' }}>
-          &copy; 2026 VRX MAGNA. All rights reserved |{' '}
+          &copy; 2026 Mahindra Rainforest. All rights reserved |{' '}
           <Link href="/" style={{ color: 'var(--color-gold)', textDecoration: 'none' }}>Back to Home</Link>
         </p>
       </footer>
